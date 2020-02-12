@@ -3,7 +3,8 @@ public class Cliente {
     private String nomeCompleto;
     private String rg;
     private String cpf;
-    private Conta conta;
+    private Conta contaCorrente;
+    private Conta contaPoupanca;
 
     public Cliente(int id, String nomeCompleto, String rg, String cpf) {
         this.id = id;
@@ -12,15 +13,23 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Conta getConta() {
-        return conta;
+    public Conta getContaCorrente() {
+        return contaCorrente;
     }
 
-    public void setConta(Conta conta) {
-        this.conta = conta;
+    public void setContaCorrente(Conta conta) {
+        this.contaCorrente = conta;
     }
 
     public String getNomeCompleto() {
         return nomeCompleto;
+    }
+
+    public Conta getContaPoupanca() {
+        return contaPoupanca;
+    }
+
+    public void setContaPoupanca(Conta contaPoupanca) {
+        this.contaPoupanca = contaPoupanca;
     }
 }

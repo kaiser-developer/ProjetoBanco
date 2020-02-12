@@ -1,7 +1,7 @@
-public class Corrente extends Conta {
+public class ContaCorrente extends Conta {
     private float chequeEspecial;
 
-    public Corrente(float chequeEspecial, float saldo, String agencia, String numeroConta) {
+    public ContaCorrente(float chequeEspecial, float saldo, String agencia, String numeroConta) {
         super(saldo, agencia, numeroConta);
         this.chequeEspecial = chequeEspecial;
     }
