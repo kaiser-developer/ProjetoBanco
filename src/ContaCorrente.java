@@ -29,7 +29,7 @@ public class ContaCorrente extends Conta {
         }
     }
 
-    public void inserirCheque(Cheque cheque) {
+    public void depositarCheque(Cheque cheque) {
         this.cheques.add(cheque);
         this.depositar(cheque.getValor());
     }

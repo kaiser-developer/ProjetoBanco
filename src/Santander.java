@@ -21,11 +21,10 @@ public class Santander {
         cliente2.setContaCorrente(conta2);
         cliente2.getContaCorrente().sacar(2600);
         cliente2.getContaCorrente().depositar(1600);
-        cliente2.getContaCorrente().sacar(3000);
         cliente2.getContaCorrente().consultarSaldo();
-        ((ContaCorrente) cliente2.getContaCorrente()).inserirCheque(cheque1);
+        ((ContaCorrente) cliente2.getContaCorrente()).depositarCheque(cheque1);
 
-        ArrayList<Cheque> cheques = new ArrayList();
+        ArrayList<Cheque> cheques;
         cheques = ((ContaCorrente) cliente2.getContaCorrente()).getCheques();
         System.out.println(cheques.get(0).getValor());
     }
