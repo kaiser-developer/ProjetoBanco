@@ -3,8 +3,8 @@ public class Cliente {
     private String nomeCompleto;
     private String rg;
     private String cpf;
-    private Conta contaCorrente;
-    private Conta contaPoupanca;
+    private ContaCorrente contaCorrente;
+    private ContaPoupanca contaPoupanca;
 
     public Cliente(int id, String nomeCompleto, String rg, String cpf) {
         this.id = id;
@@ -17,7 +17,7 @@ public class Cliente {
         return contaCorrente;
     }
 
-    public void setContaCorrente(Conta conta) {
+    public void setContaCorrente(ContaCorrente conta) {
         this.contaCorrente = conta;
     }
 
@@ -29,7 +29,7 @@ public class Cliente {
         return contaPoupanca;
     }
 
-    public void setContaPoupanca(Conta contaPoupanca) {
+    public void setContaPoupanca(ContaPoupanca contaPoupanca) {
         this.contaPoupanca = contaPoupanca;
     }
 }

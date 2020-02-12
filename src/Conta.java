@@ -17,22 +17,6 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public String getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(String agencia) {
-        this.agencia = agencia;
-    }
-
-    public String getNumeroConta() {
-        return numeroConta;
-    }
-
-    public void setNumeroConta(String numeroConta) {
-        this.numeroConta = numeroConta;
-    }
-
     public void sacar(float valor){
         if(this.saldo >= valor){
             this.saldo -= valor;
