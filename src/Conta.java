@@ -48,8 +48,6 @@ public class Conta {
         System.out.println("Seu novo saldo é: R$ " + this.saldo);
     }
 
-    public void recolherJuros(){}
-
     public void consultarSaldo(){
         System.out.println("Seu saldo atual é: R$ " + this.saldo);
     }
